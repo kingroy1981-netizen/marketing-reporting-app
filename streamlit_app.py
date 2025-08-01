@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import gspread
+import json
 from google.oauth2.service_account import Credentials
 
 # ====== CONFIGURATION ======
@@ -20,7 +21,7 @@ if not uploaded_file:
 
 # ---- Connect to Google Sheets ----
 creds = Credentials.from_service_account_info(
-    pd.read_json(uploaded_file).to_dict(),
+    json.load(uploaded_file),
     scopes=SCOPES
 )
 gc = gspread.authorize(creds)
