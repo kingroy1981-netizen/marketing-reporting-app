@@ -6,7 +6,7 @@ from google.oauth2.service_account import Credentials
 
 # ====== CONFIGURATION ======
 SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-SHEET_URL = "https://docs.google.com/spreadsheets/d/1usWA6IeJ_XVh4y9aZ4gKEzAF2l8DdUreH8mIKCc-uwQ/edit#gid=0"  # <-- Դրա մեջ դնում ես քո Sheets-ի հղումը
+SHEET_URL = "https://docs.google.com/spreadsheets/d/19m4fpTtjiivQYNfmOk0K8-tzyGzoZMV6zzCwVBGvSZ0/edit"  # <-- Դրա մեջ դնում ես քո Sheets-ի հղումը
 SHEET_NAME = "RED Strimlit"  # կամ իրական sheet-ի անունը, եթե փոխել ես
 # ====== END CONFIG ======
 
